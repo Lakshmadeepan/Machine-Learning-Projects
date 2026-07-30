@@ -18,7 +18,7 @@ data.drop_duplicates(inplace=True)
 # print(data.info())
 # print(data.isnull().sum())
 
-X=data.iloc[:,1:]
+X=data.iloc[:,1:]#column
 Y=data.iloc[:,0]
 # print(X.info())
 encoders={}
