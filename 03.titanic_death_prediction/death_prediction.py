@@ -48,14 +48,3 @@ score=model.score(
 )
 
 joblib.dump(model,"titanic_death_prediction.pkl")
-loaded_model=joblib.load("titanic_death_prediction.pkl")
-
-print("Accuracy:",score*100)
-# print(data.info())
-sample = [[1, "male", 45, 1, 0, 90.0, "C"]]
-
-sample_data=pd.DataFrame(sample,columns=X.columns)
-for column in categories: 
-  sample_data[column]=encoders[column].transform(sample_data[column])
-prediction=loaded_model.predict(sample_data)
-print(f"The predicted output is {prediction}")
