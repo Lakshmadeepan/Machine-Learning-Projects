@@ -47,4 +47,5 @@ score=model.score(
     Y_test
 )
 
-joblib.dump(model,"titanic_death_prediction.pkl")
+joblib.dump(model, r"03.titanic_death_prediction\models\titanic_death_prediction.pkl")
+joblib.dump(encoders, r"03.titanic_death_prediction\models\encoders.pkl")
