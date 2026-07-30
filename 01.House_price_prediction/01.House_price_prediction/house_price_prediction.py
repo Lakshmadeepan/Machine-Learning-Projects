@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 
 data=pd.read_csv("Housing.csv")
-X=data.iloc[:,1:13]#columns
+X=data.iloc[:,1:13]
 Y=data.iloc[:,0]
 
 encoders={}
